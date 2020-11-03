@@ -1,0 +1,21 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+    <servlet>
+        <servlet-name>ExcelDemo</servlet-name>
+        <servlet-class>com.servlets.ExcelDemo</servlet-class>
+        <init-param>
+            <param-name>course</param-name>
+            <param-value>java</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExcelDemo</servlet-name>
+        <url-pattern>/Excel</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+        

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel</title>
+    <link rel="stylesheet" href="Excel.css">
+
+</head>
+<body>
+<table cellpadding="0" ; cellspacing="0">
+    <form action="./loadData" name="save" method="post" target="_blank">
+        <input type="submit" value="Show Persons Info" class="CRBtn" />
+        <div><a href="#"><img src="icons8-microsoft-excel-64%20(1).png"></a>
+            <label>File name :</label><input class="filenameInput" name="FileName" value="Filename">
+        </div>
+    </form>
+    <form action="./showExcelFile" method="post" enctype="multipart/form-data">
+        <input type="submit" value="Upload An Excel File" class="CRBtn"/>
+        <input type="text" name="description" />
+        <input type="file" name="file" />
+
+    </form>
+    <br>
+
+    <br>
+
+</table>
+</body>
+</html>

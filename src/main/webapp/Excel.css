@@ -1,0 +1,80 @@
+body {
+    background-image: url("microsoft-excel-logo.png");
+}
+
+.CRBtn{
+    width: 20%;
+    background: #cccccc;
+    border: darkgray solid;
+    margin-left: 520px;
+    padding: 20px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 10%;
+    background: #cccccc;
+    border: darkgray solid;
+    padding: 5px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.filenameInput {
+    backdrop-filter: opacity(0.5%);
+    border: 0px solid #000;
+    margin: 0;
+    background: transparent;
+    width: 20%
+}
+
+.topOfTable {
+    font-size: 20px;
+    text-align: center;
+
+
+}
+data{
+    backdrop-filter: opacity(0.5%);
+
+    border: 0px solid #000;
+    margin: 0;
+    background: transparent;
+    width: 100%
+}
+
+input {
+    backdrop-filter: opacity(0.5%);
+
+    border: 0px solid #000;
+    margin: 0;
+    background: transparent;
+    width: 100%
+}
+
+table tr td {
+    border-right: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+table {
+    margin-left: 250px;
+    filter: alpha(opacity:40);
+    KHTMLOpacity: 0.80;
+    MozOpacity: 0.80;
+    opacity: 0.80;
+    background: #fff none repeat scroll 0 0;
+    border-left: 0px solid #000;
+    border-top: 1px solid #000;
+}
+
+table tr:nth-child(even) {
+    background: #ccc;
+}
+
+table tr:nth-child(odd) {
+    background: #eee;
+}
