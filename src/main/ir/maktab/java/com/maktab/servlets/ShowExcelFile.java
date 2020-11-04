@@ -1,11 +1,7 @@
-package com.servlets;
+package com.maktab.servlets;
 
 import com.maktab.domains.Person;
 import com.maktab.excel.ExcelReader;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;

@@ -1,4 +1,4 @@
-package com.servlets;
+package com.maktab.servlets;
 
 import com.maktab.domains.Person;
 import com.maktab.repository.PersonRepositoryImpl;

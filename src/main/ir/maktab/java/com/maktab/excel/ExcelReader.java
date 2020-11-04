@@ -17,17 +17,15 @@ import java.util.List;
 
 
 public class ExcelReader {
-//FIXME
+    //FIXME
     public List<Person> excelReader(InputStream inputStream) throws IOException {
         List<Person> personList = new ArrayList<>();
 
         try {
-            Workbook workbook =  WorkbookFactory.create(inputStream);
+            Workbook workbook = WorkbookFactory.create(inputStream);
             Iterator<Sheet> sheets = workbook.sheetIterator();
             while (sheets.hasNext()) {
                 Sheet sh = sheets.next();
-                System.out.println("Sheet name :" + sh.getSheetName());
-                System.out.println("--------------------");
                 Iterator<Row> iterator = sh.iterator();
                 while (iterator.hasNext()) {
                     Person person = new Person();
@@ -49,7 +47,7 @@ public class ExcelReader {
         } catch (Exception e) {
             e.getStackTrace();
         }
-return personList;
+        return personList;
 
     }
 

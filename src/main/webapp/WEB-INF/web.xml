@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>ExcelDemo</servlet-name>
-        <servlet-class>com.servlets.ExcelDemo</servlet-class>
+        <servlet-class>com.maktab.servlets.ExcelDemo</servlet-class>
         <init-param>
             <param-name>course</param-name>
             <param-value>java</param-value>
