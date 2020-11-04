@@ -2,6 +2,7 @@ package com.maktab.baseEntity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 
 @Entity
@@ -10,14 +11,13 @@ public class BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(updatable = false, nullable = false)
-    protected String id;
+    protected Long id;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }

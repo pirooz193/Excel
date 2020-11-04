@@ -22,9 +22,20 @@ public class ExcelDemo extends HttpServlet {
         List<Person> personList = (List<Person>) req.getAttribute("personList");
         Person[] personArray = new Person[personList.size()];
         StringBuilder rows = new StringBuilder();
+        String test=" ";
         for (int i = 0; i < personList.size(); i++) {
             personArray[i] = new Person();
             personArray[i] = personList.get(i);
+
+//            Wrong:
+            /*test.concat("<tr>\n" +
+                    "\n" +
+                    "            <td><div class=\"data\">" + personArray[i].getId() + "</div></td>\n" +
+                    "            <td><div class=\"data\">" + personArray[i].getName() + "</div></td>\n" +
+                    "            <td><div class=\"data\">" + personArray[i].getLastName() + "</div></td>\n" +
+                    "            <td><div class=\"data\">" + personArray[i].getPhoneNumber() + "</div></td>\n" +
+                    "\n" +
+                    "        </tr>");*/
             rows.append("<tr>\n" +
                     "\n" +
                     "            <td><div class=\"data\">" + personArray[i].getId() + "</div></td>\n" +

@@ -30,11 +30,9 @@ public class ExcelReader {
                 while (iterator.hasNext()) {
                     Person person = new Person();
                     Row row = iterator.next();
-                    String id = row.getCell(0).getStringCellValue();
                     String name = row.getCell(1).getStringCellValue();
                     String lastName = row.getCell(2).getStringCellValue();
                     String phoneNumber = row.getCell(3).getStringCellValue();
-                    person.setId(id);
                     person.setName(name);
                     person.setLastName(lastName);
                     person.setPhoneNumber(phoneNumber);
